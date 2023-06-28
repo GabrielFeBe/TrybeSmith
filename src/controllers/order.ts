@@ -6,7 +6,6 @@ async function getingOrders(req: Request, res:Response):Promise<Response> {
   const newResponse = response.map(({ dataValues: d }) => ({ id: d.id,
     userId: d.userId,
     productIds: d.productIds?.map(({ id }) => id),
-  
   }));
 
   return res.status(200).json(newResponse);

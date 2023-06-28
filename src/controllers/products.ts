@@ -13,9 +13,10 @@ async function registeringProducts(req: Request, res:Response):Promise<Response>
   }
   return res.status(errorHandler(response.status)).json({ message: response.message });
 }
+
 async function getingProducts(req: Request, res:Response):Promise<Response> {
   const response = await productsService.getingProducts();
-
+  
   return res.status(200).json(response.message);
 }
 
