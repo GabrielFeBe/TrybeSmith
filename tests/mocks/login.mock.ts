@@ -30,3 +30,10 @@ export const validReq = {
   status: 'SUCESS',
   message: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJIYWdhciIsImlhdCI6MTY4Njc1NDc1Nn0.jqAuJkcLp0RuvrOd4xKxtj_lm3Z3-73gQQ9IVmwE5gA"
 }
+
+export const invalidReqBad = {
+  status: 'BAD_REQUEST',
+  message: '"username" and "password" are required'
+}
+
+export const invalidReqUn = { status: 'UNAUTHORIZED', message: 'Username or password invalid' };
